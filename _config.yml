@@ -7,8 +7,8 @@
 github: [metadata]
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Site Settings
-locale                   : "en"
-title                    : "amr"
+locale                   : "fa-IR" # fa-IR , en-Us
+title                    : "Home"
 title_separator          : "|"
 name                     : "Amirhossein Rostami"
 description              : "Personal webpage."
@@ -17,7 +17,9 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "AmirhosseinR/AmirhosseinR.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 150
+logo                     : "/assets/images/mind.png"
+words_per_minute         : 200
+date_format              : "%Y-%b-%d"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -47,21 +49,35 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-
+  hide                   : # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+lunr:
+  search_within_pages    : # true, false (default)
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
+naver_site_verification  :
 yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : Amir
+  username               :
 facebook:
-  username               : Amir
+  username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/swim.png"
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -74,9 +90,10 @@ social:
     - "https://www.linkedin.com/in/amirhossein-rostami"
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : UA-88048419-1
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
 
 
 # Site Author
@@ -112,6 +129,29 @@ author:
   resume           : "/assets/data/Amir.pdf"
   acm              : "https://scholar.google.com/"
 
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+
+
 # Reading Files
 include:
   - .htaccess
@@ -137,6 +177,7 @@ exclude:
   - log
   - node_modules
   - package.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
@@ -155,7 +196,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Markdown Processing
@@ -173,17 +213,17 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/New_York
+timezone: Arctic/Longyearbyen # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -210,8 +250,8 @@ whitelist:
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
@@ -232,16 +272,12 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
 
-collections:
-  nyc365blog:
-    output: true
-    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -256,21 +292,5 @@ defaults:
       comments: # true
       share: true
       related: true
-  - scope:
-      path: ""
-      type: nyc365blog
-    values:
-      layout: single
-      author_profile: true
-      comments: # true
-      share: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      show_date: true
+      

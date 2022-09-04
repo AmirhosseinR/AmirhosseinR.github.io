@@ -2,8 +2,18 @@
 layout: single
 title:  "Welcome to Jekyll!"
 date:   2022-09-03 16:56:53 +0200
-categories: jekyll update
+tags: [C/C++]
+categories: DSP
+header:
+  teaser: /assets/images/WallpaperDogs-5450205.jpg
+  overlay_image: /assets/images/pcb3.jpg
+  caption: "Photo credit: [**ge**](https://www.ge.com/research/technology-domains/electronics-sensing)"
+show_date: true
+excerpt: "This is summary"
 ---
+اولین پست پارسی
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

@@ -1,0 +1,13 @@
+# main links
+main:
+  - title: "Blogs"
+    url: /blogs/
+  - title: "FPGA"
+    url: /fpga/
+    description: FPGA tutorial
+  - title: "Machine Learning"
+    url: /ml/
+  - title: "DSP"
+    url: /dsp/
+  - title: "Notes"
+    url: /notes/
