@@ -8,7 +8,7 @@ github: [metadata]
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Site Settings
 locale                   : "en-Us" # fa-IR , en-Us
-title                    : "Home"
+title                    : ""
 title_separator          : "|"
 name                     : "Amirhossein Rostami"
 description              : "Personal webpage."
@@ -17,7 +17,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "AmirhosseinR/AmirhosseinR.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-logo                     : "/assets/images/mind.png"
+logo                     : "/assets/images/home.png"
 words_per_minute         : 200
 date_format              : "%Y-%b-%d"
 comments:
@@ -99,10 +99,10 @@ analytics:
 # Site Author
 author:
   name             : "Amirhossein Rostami"
-  avatar           : "/assets/images/swim.png"
-  bio              : "Hello this is bio"
+  avatar           : "/assets/images/Me.jpg"
+  bio              : "I still have a lot to learn!"
   location         : "Germany"
-  email            : amir@gmail.edu
+  email            : amirhossein.rostami[at-sign]tu-dresden[dot]de
   uri              :
   bitbucket        :
   codepen          :
@@ -113,7 +113,7 @@ author:
   github           : AmirhosseinR
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : realmrbit
   lastfm           :
   linkedin         : amirhossein-rostami
   pinterest        :

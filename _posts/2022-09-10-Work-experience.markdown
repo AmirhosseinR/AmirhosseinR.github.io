@@ -90,8 +90,16 @@ Main projects I did during working.
 
 ![image](/assets/images/Intercom Systems.png){: width="500" }{:style="display:block; margin-left:auto; margin-right:auto"}
 
+# Technische Universität Dresden
 
+## Verilog code for IO multiplex through UDP
 
+## Deep learning
+
+- Tensorflow simulation
+- C/C++ code for implementing online learning
+  - E-prop spiking RNN learning rule
+  - On SpiNNaker 2, many-core neuromorphic hardware (ARM cortex-M4F)
 
 
 
