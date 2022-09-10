@@ -7,7 +7,7 @@
 github: [metadata]
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Site Settings
-locale                   : "fa-IR" # fa-IR , en-Us
+locale                   : "en-Us" # fa-IR , en-Us
 title                    : "Home"
 title_separator          : "|"
 name                     : "Amirhossein Rostami"

@@ -9,5 +9,5 @@ main:
     url: /ml/
   - title: "DSP"
     url: /dsp/
-  - title: "Notes"
-    url: /uni/
+  - title: "Projects"
+    url: /Projects/
