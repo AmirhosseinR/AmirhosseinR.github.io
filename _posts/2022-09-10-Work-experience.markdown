@@ -10,6 +10,10 @@ header:
   # caption: "Photo credit: [**ge**](https://www.ge.com/research/technology-domains/electronics-sensing)"
 show_date: true
 excerpt: "Main projects I did"
+toc: true
+toc_label: "Content" # defautl: Content
+toc_icon: "file"  # corresponding Font Awesome icon name without the "fa" prefix
+toc_sticky: true   # enables sticky toc
 ---
 
 Main projects I did during working.

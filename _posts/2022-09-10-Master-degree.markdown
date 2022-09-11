@@ -10,6 +10,7 @@ header:
   # caption: "Photo credit: [**ge**](https://www.ge.com/research/technology-domains/electronics-sensing)"
 show_date: true
 excerpt: "DSP and FPGA board design"
+comment_issue_id: 1
 ---
 
 DSP and FPGA board files in Altium designer
