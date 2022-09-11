@@ -67,6 +67,9 @@ Main projects I did during working.
   - Testing Software
   - User manual
 
+
+-------------------------------------------
+
 # Projects
 
 ## Zynq-7000
@@ -80,6 +83,8 @@ Main projects I did during working.
 - Developing VHDL code for DAC (500 MSPS)
 - Developing AM Modulation and Demodulation
 
+-------------------------------------------
+
 # [Samim Rayaneh](https://www.samimgroup.com/اینترکام/)
 
 ## Intercom Systems
@@ -90,16 +95,23 @@ Main projects I did during working.
 
 ![image](/assets/images/Intercom Systems.png){: width="500" }{:style="display:block; margin-left:auto; margin-right:auto"}
 
-# Technische Universität Dresden
+-------------------------------------------
+
+# [Technische Universität Dresden](https://tu-dresden.de/ing/elektrotechnik/iee/hpsn/die-professur/beschaeftigte)
 
 ## Verilog code for IO multiplex through UDP
 
 ## Deep learning
 
-- Tensorflow simulation
-- C/C++ code for implementing online learning
-  - E-prop spiking RNN learning rule
-  - On SpiNNaker 2, many-core neuromorphic hardware (ARM cortex-M4F)
+- Implementing E-prop spiking RNN learning rule on SpiNNaker 2, many-core neuromorphic hardware (ARM cortex-M4F)
+  - Train the network in tensorflow with automatic differentiation (auto-diff or auto-grad)
+  - Train the network in tensorflow without automatic differentiation
+  - Write C/C++ code and compare result
+  - Change C/C++ code to SpiNNaker style
+  - Change the code for multi-pe implementation
+
+![image](/assets/images/e-prop implementation steps.png){: width="500" }{:style="display:block; margin-left:auto; margin-right:auto"}
+
 
 
 
